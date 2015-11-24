@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="com.abhi.demo.dto.BikeDTO" table="bike_table">
+    	<id name="id" column="bikeId">
+    		<generator class="increment"/>
+    	</id>
+    	<property name="colour" column="Colour"/>
+    	<property name="model" column="Model"/>
+    	<property name="price" column="Price"/>
+    </class>
+    </hibernate-mapping>
